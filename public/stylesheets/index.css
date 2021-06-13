@@ -1,9 +1,4 @@
-.heading > div {
-    background-color: white;
-    color: black;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-size: 25px;
-    max-width: 95%;
-    border: #5C1D13 solid 2px;
+#insertInstructions{
+    margin-top: 3%;
+    padding-left: 2%;
 }

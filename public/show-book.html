@@ -114,6 +114,7 @@
             '<table class="table table-bordered table-hover"> \n' +
             '   <thead>\n' +
             '       <tr>\n' +
+            '           <th scope="col">ID</th> \n' +
             '           <th scope="col">Title</th> \n'+
             '           <th scope="col">Description</th> \n'+
             '           <th scope="col">Year</th> \n'+
@@ -126,6 +127,7 @@
 
             table +=
                 '       <tr>\n' +
+                '           <td>' + data["_id"] +  '</td>\n' +
                 '           <td>' + data["title"] +  '</td>\n' +
                 '           <td>' + data["description"]+  '</td>\n' +
                 '           <td>' + data["year"]+  '</td>\n' +

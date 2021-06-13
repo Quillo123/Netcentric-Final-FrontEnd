@@ -53,6 +53,88 @@
     <h1>Noah's Books</h1>
 </div>
 
+<div class="container">
+    <h3>
+        This is Noah Gallo's final project for CSC3221 Netcentric Computing.
+    </h3>
+    <p>
+        The Backend for this site can be found at <a href="https://noahgallo-netcentric-final.herokuapp.com/">https://noahgallo-netcentric-final.herokuapp.com/</a>
+    </p>
+</div>
+
+<div class="container" id="insertInstructions">
+    <h4>Book Operations</h4>
+    <p style="padding-left: 2%">
+         * = 'https://noahgallo-netcentric-final.herokuapp.com'
+    </p>
+    <ul>
+        <li>
+            <h5>GET</h5>
+            <ul>
+                <li>
+                    <h6>*/api/books/</h6>
+                    <p>returns all the books as a json array.</p>
+                    <p>Including a Path Variable of "title" will return the book with the specified title</p>
+                </li>
+                <li>
+                    <h6>*/api/books/:id</h6>
+                    <p>returns the book of the specified id</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h5>POST</h5>
+            <ul>
+                <li>
+                    <h6>*/api/books/</h6>
+                    <p>Post with path variables in the following Format:</p>
+                    <ul>
+                        <li>title = [string]</li>
+                        <li>description = [string]</li>
+                        <li>price = [number]</li>
+                        <li>year = [number]</li>
+                        <li>hardcover = [bool]</li>
+                        <li>authors[0]['name'] = [string]</li>
+                        <li>authors[0]['nationality'] = [string]</li>
+                        <li>authors[1]['name']=[string]</li>
+                        <li>authors[1]['nationality'] = [string]</li>
+                    </ul>
+                    <p style="font-size: 15px;"> - Authors must start from 0 and must not skip Integers. You May add as many as needed, just keep increasing the number.</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h5>PATCH</h5>
+            <ul>
+                <li>
+                    <h6>*/api/books/:id</h6>
+                    <p>Use the same variable formats POST uses</p>
+                    <ul>
+                        <li>title = [string]</li>
+                        <li>description = [string]</li>
+                        <li>price = [number]</li>
+                        <li>year = [number]</li>
+                        <li>hardcover = [bool]</li>
+                        <li>authors[0] = [ID]</li>
+                        <li>authors[1] = [ID]</li>
+                    </ul>
+                    <p style="font-size: 15px;"> - Patching for Authors requires that you use the ID of an existing Author </p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h5>Delete</h5>
+            <ul>
+                <li>
+                    <h6>*/api/books/:id</h6>
+                    <p>Deletes the specified ID</p>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+</div>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

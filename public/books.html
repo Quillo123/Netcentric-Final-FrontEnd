@@ -89,6 +89,7 @@
             '<table class="table table-bordered table-hover"> \n' +
             '   <thead>\n' +
             '       <tr>\n' +
+            '           <th scope="col">ID</th> \n' +
             '           <th scope="col">Title</th> \n'+
             '           <th scope="col">Description</th> \n'+
             '           <th scope="col">Year</th> \n'+
@@ -102,6 +103,7 @@
         for (let i = page * booksPerPage; i < data.length && i < ((page * booksPerPage) + booksPerPage); i++){
             table +=
                 '       <tr>\n' +
+                '           <td>' + data[i]["_id"] +  '</td>\n' +
                 '           <td>' + data[i]["title"] +  '</td>\n' +
                 '           <td>' + data[i]["description"]+  '</td>\n' +
                 '           <td>' + data[i]["year"]+  '</td>\n' +
